@@ -1,0 +1,64 @@
+site:
+  id: option-e
+  letter: E
+  title: Extended / Boil-off Capture
+  subtitle: "Tier C \xB7 Option 3 \u2014 BOG Recovery"
+  cinematic_title: "Apollo LNG \xB7 BOG Capture Array"
+  cinematic_kicker: "BOIL-OFF CAPTURE \xB7 DRONE FLYTHROUGH"
+  footprintAcres: 2.3
+  enduranceHrs: 22
+  hasPump: false
+  hasCapture: true
+  recommended: false
+iso_array:
+  count: 24
+  cols: 6
+  rows: 4
+  origin:
+  - -54.72
+  - -9.8
+  - 0.0
+  rotation: 0
+equipment:
+- id: transportOffload
+  type: truck_bay
+  pos:
+  - -51.85
+  - 18.02
+  - 0.0
+  rotation: 0
+- id: cryoManifold
+  type: pipe_manifold
+  pos:
+  - -15.97
+  - -17.0
+  - 0.0
+  rotation: 0
+- id: queens
+  type: queens_pair
+  pos:
+  - -43.6
+  - -19.5
+  - 0.0
+  rotation: 0
+- id: vaporizer
+  type: glycol_vaporizer_with_stack
+  pos:
+  - 44.85
+  - -6.0
+  - 0.0
+  rotation: 0
+- id: bogCapture
+  type: bog_skid
+  pos:
+  - 31.85
+  - -15.0
+  - 0.0
+  rotation: 0
+- id: delivery
+  type: delivery_flange
+  pos:
+  - 72.85
+  - -3.5
+  - 0.0
+  rotation: 0

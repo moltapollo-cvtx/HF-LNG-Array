@@ -1,0 +1,15 @@
+site: option-e
+cinematics:
+  micro:
+    label: "Micro Test Cinematic"
+    description: "Two shots only — for unit testing."
+    duration: 9
+    shots:
+      - type: wide
+        dur: 5
+        subject: site
+        caption: "Establishing"
+      - type: hero
+        dur: 4
+        subject: bogCapture
+        caption: "BOG hero"

@@ -1,0 +1,866 @@
+{
+  "source": "Compiled from cinematics/option-e.shots.yaml on 2026-05-25T11:26:21",
+  "fps": 30,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "blendFile": "models/lng-site/option-e.blend",
+  "glbFile": "models/lng-site/option-e.glb",
+  "velocityCap": 10.0,
+  "cinematics": {
+    "process-flow": {
+      "label": "Process Flow",
+      "description": "Follow the LNG through the site, ending on delivery. Pitch-deck cut.",
+      "durationSec": 69.308,
+      "waypoints": [
+        {
+          "t": 0.0,
+          "pos": [
+            73.876,
+            -77.136,
+            60.0
+          ],
+          "lookAt": [
+            3.166,
+            -6.426,
+            5.0
+          ],
+          "focal": 24,
+          "ease": "easeInOut",
+          "feature": "site",
+          "caption": "Apollo LNG \u00b7 Option E"
+        },
+        {
+          "t": 21.28,
+          "pos": [
+            -87.205,
+            53.375,
+            12.0
+          ],
+          "lookAt": [
+            -51.85,
+            18.02,
+            1.5
+          ],
+          "focal": 35,
+          "ease": "easeInOut",
+          "feature": "transportOffload",
+          "caption": "Transport Offload Bay"
+        },
+        {
+          "t": 27.125,
+          "pos": [
+            -73.063,
+            -3.193,
+            8.0
+          ],
+          "lookAt": [
+            -51.85,
+            18.02,
+            1.5
+          ],
+          "focal": 40,
+          "ease": "easeInOut",
+          "feature": "transportOffload",
+          "caption": "Transport Offload Bay"
+        },
+        {
+          "t": 31.125,
+          "pos": [
+            -95.97,
+            -2.0,
+            40.0
+          ],
+          "lookAt": [
+            -15.97,
+            -2.0,
+            3.45
+          ],
+          "focal": 28,
+          "ease": "easeInOut",
+          "feature": "isoArrayCenter",
+          "caption": "24\u00d7 10K LNG ISO"
+        },
+        {
+          "t": 39.125,
+          "pos": [
+            -33.648,
+            -34.678,
+            6.0
+          ],
+          "lookAt": [
+            -15.97,
+            -17.0,
+            1.5
+          ],
+          "focal": 38,
+          "ease": "easeInOut",
+          "feature": "cryoManifold",
+          "caption": "Cryogenic Manifold"
+        },
+        {
+          "t": 43.125,
+          "pos": [
+            -64.813,
+            -40.713,
+            8.0
+          ],
+          "lookAt": [
+            -43.6,
+            -19.5,
+            1.5
+          ],
+          "focal": 40,
+          "ease": "easeInOut",
+          "feature": "queens",
+          "caption": "HP Smart Queens (\u00d72)"
+        },
+        {
+          "t": 50.039,
+          "pos": [
+            -5.15,
+            -6.0,
+            12.0
+          ],
+          "lookAt": [
+            44.85,
+            -6.0,
+            1.5
+          ],
+          "focal": 35,
+          "ease": "easeInOut",
+          "feature": "vaporizer",
+          "caption": "Glycol-Bath Vaporizer + Stack"
+        },
+        {
+          "t": 54.495,
+          "pos": [
+            -3.505,
+            -50.355,
+            8.0
+          ],
+          "lookAt": [
+            31.85,
+            -15.0,
+            1.5
+          ],
+          "focal": 32,
+          "ease": "easeInOut",
+          "feature": "bogCapture",
+          "caption": "BOG Capture \u2014 Option E Differentiator"
+        },
+        {
+          "t": 59.495,
+          "pos": [
+            -4.92,
+            -51.77,
+            9.0
+          ],
+          "lookAt": [
+            31.85,
+            -15.0,
+            1.5
+          ],
+          "focal": 32,
+          "ease": "easeInOut",
+          "feature": "bogCapture",
+          "caption": "BOG Capture \u2014 Option E Differentiator"
+        },
+        {
+          "t": 69.308,
+          "pos": [
+            86.992,
+            -17.642,
+            5.0
+          ],
+          "lookAt": [
+            72.85,
+            -3.5,
+            2.0
+          ],
+          "focal": 50,
+          "ease": "easeInOut",
+          "feature": "delivery",
+          "caption": "Delivery \u2014 550\u2013650 PSIG"
+        }
+      ],
+      "captions": [],
+      "velocityReport": {
+        "cap": 10.0,
+        "max_v_before": 42.56,
+        "retimed_segments": 5,
+        "duration_growth_sec": 27.308,
+        "per_segment": [
+          {
+            "i": 0,
+            "dt_before": 5.0,
+            "dt_after": 21.28,
+            "dist": 212.801,
+            "v_before": 42.56,
+            "v_after": 10.0,
+            "retimed": true
+          },
+          {
+            "i": 1,
+            "dt_before": 5.0,
+            "dt_after": 5.845,
+            "dist": 58.446,
+            "v_before": 11.689,
+            "v_after": 10.0,
+            "retimed": true
+          },
+          {
+            "i": 2,
+            "dt_before": 4.0,
+            "dt_after": 4.0,
+            "dist": 39.372,
+            "v_before": 9.843,
+            "v_after": 9.843,
+            "retimed": false
+          },
+          {
+            "i": 3,
+            "dt_before": 8.0,
+            "dt_after": 8.0,
+            "dist": 78.153,
+            "v_before": 9.769,
+            "v_after": 9.769,
+            "retimed": false
+          },
+          {
+            "i": 4,
+            "dt_before": 4.0,
+            "dt_after": 4.0,
+            "dist": 31.807,
+            "v_before": 7.952,
+            "v_after": 7.952,
+            "retimed": false
+          },
+          {
+            "i": 5,
+            "dt_before": 4.0,
+            "dt_after": 6.914,
+            "dist": 69.142,
+            "v_before": 17.286,
+            "v_after": 10.0,
+            "retimed": true
+          },
+          {
+            "i": 6,
+            "dt_before": 4.0,
+            "dt_after": 4.457,
+            "dist": 44.565,
+            "v_before": 11.141,
+            "v_after": 10.0,
+            "retimed": true
+          },
+          {
+            "i": 7,
+            "dt_before": 5.0,
+            "dt_after": 5.0,
+            "dist": 2.237,
+            "v_before": 0.447,
+            "v_after": 0.447,
+            "retimed": false
+          },
+          {
+            "i": 8,
+            "dt_before": 3.0,
+            "dt_after": 9.813,
+            "dist": 98.125,
+            "v_before": 32.708,
+            "v_after": 10.0,
+            "retimed": true
+          }
+        ]
+      }
+    },
+    "differentiator": {
+      "label": "Differentiator First",
+      "description": "Open on the BOG capture skid, pull back to reveal site context.",
+      "durationSec": 73.087,
+      "waypoints": [
+        {
+          "t": 0.0,
+          "pos": [
+            -3.505,
+            -50.355,
+            8.0
+          ],
+          "lookAt": [
+            31.85,
+            -15.0,
+            1.5
+          ],
+          "focal": 32,
+          "ease": "easeInOut",
+          "feature": "bogCapture",
+          "caption": "BOG Capture System"
+        },
+        {
+          "t": 7.5,
+          "pos": [
+            49.528,
+            2.678,
+            8.0
+          ],
+          "lookAt": [
+            31.85,
+            -15.0,
+            1.5
+          ],
+          "focal": 42,
+          "ease": "easeInOut",
+          "feature": "bogCapture",
+          "caption": "Zero LNG Loss Without Pumps"
+        },
+        {
+          "t": 11.5,
+          "pos": [
+            49.528,
+            2.678,
+            8.0
+          ],
+          "lookAt": [
+            31.85,
+            -15.0,
+            1.5
+          ],
+          "focal": 42,
+          "ease": "easeInOut",
+          "feature": "bogCapture",
+          "caption": "Boil-off Capture \u2014 Option E"
+        },
+        {
+          "t": 21.332,
+          "pos": [
+            73.876,
+            -77.136,
+            60.0
+          ],
+          "lookAt": [
+            3.166,
+            -6.426,
+            5.0
+          ],
+          "focal": 24,
+          "ease": "easeInOut",
+          "feature": "site",
+          "caption": "Apollo LNG \u2014 Option E"
+        },
+        {
+          "t": 40.012,
+          "pos": [
+            -95.97,
+            -2.0,
+            40.0
+          ],
+          "lookAt": [
+            -15.97,
+            -2.0,
+            3.45
+          ],
+          "focal": 28,
+          "ease": "easeInOut",
+          "feature": "isoArrayCenter",
+          "caption": "24\u00d7 10K LNG ISO"
+        },
+        {
+          "t": 45.922,
+          "pos": [
+            -64.813,
+            -40.713,
+            8.0
+          ],
+          "lookAt": [
+            -43.6,
+            -19.5,
+            1.5
+          ],
+          "focal": 40,
+          "ease": "easeInOut",
+          "feature": "queens",
+          "caption": "HP Smart Queens"
+        },
+        {
+          "t": 52.837,
+          "pos": [
+            -5.15,
+            -6.0,
+            12.0
+          ],
+          "lookAt": [
+            44.85,
+            -6.0,
+            1.5
+          ],
+          "focal": 35,
+          "ease": "easeInOut",
+          "feature": "vaporizer",
+          "caption": "Glycol-Bath Vaporizer"
+        },
+        {
+          "t": 58.829,
+          "pos": [
+            51.637,
+            -24.713,
+            8.0
+          ],
+          "lookAt": [
+            72.85,
+            -3.5,
+            1.5
+          ],
+          "focal": 40,
+          "ease": "easeInOut",
+          "feature": "delivery",
+          "caption": "Delivery Flange"
+        },
+        {
+          "t": 63.087,
+          "pos": [
+            10.637,
+            -36.213,
+            8.0
+          ],
+          "lookAt": [
+            31.85,
+            -15.0,
+            1.5
+          ],
+          "focal": 40,
+          "ease": "easeInOut",
+          "feature": "bogCapture",
+          "caption": "Boil-off Capture \u2014 Option E"
+        },
+        {
+          "t": 73.087,
+          "pos": [
+            9.223,
+            -37.627,
+            9.0
+          ],
+          "lookAt": [
+            31.85,
+            -15.0,
+            1.5
+          ],
+          "focal": 40,
+          "ease": "easeInOut",
+          "feature": "bogCapture",
+          "caption": "Boil-off Capture \u2014 Option E"
+        }
+      ],
+      "captions": [],
+      "velocityReport": {
+        "cap": 10.0,
+        "max_v_before": 37.359,
+        "retimed_segments": 7,
+        "duration_growth_sec": 28.087,
+        "per_segment": [
+          {
+            "i": 0,
+            "dt_before": 4.0,
+            "dt_after": 7.5,
+            "dist": 75.0,
+            "v_before": 18.75,
+            "v_after": 10.0,
+            "retimed": true
+          },
+          {
+            "i": 1,
+            "dt_before": 4.0,
+            "dt_after": 4.0,
+            "dist": 0.0,
+            "v_before": 0.0,
+            "v_after": 0.0,
+            "retimed": false
+          },
+          {
+            "i": 2,
+            "dt_before": 5.0,
+            "dt_after": 9.832,
+            "dist": 98.321,
+            "v_before": 19.664,
+            "v_after": 10.0,
+            "retimed": true
+          },
+          {
+            "i": 3,
+            "dt_before": 5.0,
+            "dt_after": 18.68,
+            "dist": 186.797,
+            "v_before": 37.359,
+            "v_after": 10.0,
+            "retimed": true
+          },
+          {
+            "i": 4,
+            "dt_before": 5.0,
+            "dt_after": 5.911,
+            "dist": 59.105,
+            "v_before": 11.821,
+            "v_after": 10.0,
+            "retimed": true
+          },
+          {
+            "i": 5,
+            "dt_before": 4.0,
+            "dt_after": 6.914,
+            "dist": 69.142,
+            "v_before": 17.286,
+            "v_after": 10.0,
+            "retimed": true
+          },
+          {
+            "i": 6,
+            "dt_before": 4.0,
+            "dt_after": 5.992,
+            "dist": 59.924,
+            "v_before": 14.981,
+            "v_after": 10.0,
+            "retimed": true
+          },
+          {
+            "i": 7,
+            "dt_before": 4.0,
+            "dt_after": 4.258,
+            "dist": 42.582,
+            "v_before": 10.646,
+            "v_after": 10.0,
+            "retimed": true
+          },
+          {
+            "i": 8,
+            "dt_before": 10.0,
+            "dt_after": 10.0,
+            "dist": 2.236,
+            "v_before": 0.224,
+            "v_after": 0.224,
+            "retimed": false
+          }
+        ]
+      }
+    },
+    "scale-detail": {
+      "label": "Scale \u2192 Detail",
+      "description": "Orbital establishing then documentary detail pass across the skids.",
+      "durationSec": 101.128,
+      "waypoints": [
+        {
+          "t": 0.0,
+          "pos": [
+            83.166,
+            -6.426,
+            40.0
+          ],
+          "lookAt": [
+            3.166,
+            -6.426,
+            2.0
+          ],
+          "focal": 28,
+          "ease": "linear",
+          "feature": "site",
+          "caption": "Apollo LNG \u00b7 Option E"
+        },
+        {
+          "t": 11.314,
+          "pos": [
+            3.166,
+            73.574,
+            40.0
+          ],
+          "lookAt": [
+            3.166,
+            -6.426,
+            2.0
+          ],
+          "focal": 28,
+          "ease": "linear",
+          "feature": "site",
+          "caption": "Apollo LNG \u00b7 Option E"
+        },
+        {
+          "t": 22.627,
+          "pos": [
+            -76.834,
+            -6.426,
+            40.0
+          ],
+          "lookAt": [
+            3.166,
+            -6.426,
+            2.0
+          ],
+          "focal": 28,
+          "ease": "linear",
+          "feature": "site",
+          "caption": "Apollo LNG \u00b7 Option E"
+        },
+        {
+          "t": 33.941,
+          "pos": [
+            3.166,
+            -86.426,
+            40.0
+          ],
+          "lookAt": [
+            3.166,
+            -6.426,
+            2.0
+          ],
+          "focal": 28,
+          "ease": "linear",
+          "feature": "site",
+          "caption": "Apollo LNG \u00b7 Option E"
+        },
+        {
+          "t": 53.531,
+          "pos": [
+            -108.419,
+            74.589,
+            40.0
+          ],
+          "lookAt": [
+            -51.85,
+            18.02,
+            2.0
+          ],
+          "focal": 28,
+          "ease": "easeInOut",
+          "feature": "transportOffload",
+          "caption": "Transport Offload Bay"
+        },
+        {
+          "t": 66.047,
+          "pos": [
+            -37.183,
+            -23.213,
+            8.0
+          ],
+          "lookAt": [
+            -15.97,
+            -2.0,
+            2.95
+          ],
+          "focal": 40,
+          "ease": "easeInOut",
+          "feature": "isoArrayCenter",
+          "caption": "24\u00d7 10K LNG ISO"
+        },
+        {
+          "t": 71.047,
+          "pos": [
+            -37.183,
+            -38.213,
+            8.0
+          ],
+          "lookAt": [
+            -15.97,
+            -17.0,
+            1.5
+          ],
+          "focal": 40,
+          "ease": "easeInOut",
+          "feature": "cryoManifold",
+          "caption": "Cryogenic Manifold"
+        },
+        {
+          "t": 75.047,
+          "pos": [
+            -64.813,
+            -40.713,
+            8.0
+          ],
+          "lookAt": [
+            -43.6,
+            -19.5,
+            1.5
+          ],
+          "focal": 40,
+          "ease": "easeInOut",
+          "feature": "queens",
+          "caption": "HP Smart Queens (\u00d72)"
+        },
+        {
+          "t": 83.994,
+          "pos": [
+            23.637,
+            -27.213,
+            8.0
+          ],
+          "lookAt": [
+            44.85,
+            -6.0,
+            1.5
+          ],
+          "focal": 40,
+          "ease": "easeInOut",
+          "feature": "vaporizer",
+          "caption": "Glycol-Bath Vaporizer + Stack"
+        },
+        {
+          "t": 87.994,
+          "pos": [
+            10.637,
+            -36.213,
+            8.0
+          ],
+          "lookAt": [
+            31.85,
+            -15.0,
+            1.5
+          ],
+          "focal": 40,
+          "ease": "easeInOut",
+          "feature": "bogCapture",
+          "caption": "BOG Capture Skid"
+        },
+        {
+          "t": 91.994,
+          "pos": [
+            9.223,
+            -37.627,
+            9.0
+          ],
+          "lookAt": [
+            31.85,
+            -15.0,
+            1.5
+          ],
+          "focal": 40,
+          "ease": "easeInOut",
+          "feature": "bogCapture",
+          "caption": "BOG Capture Skid"
+        },
+        {
+          "t": 101.128,
+          "pos": [
+            73.876,
+            -77.136,
+            60.0
+          ],
+          "lookAt": [
+            3.166,
+            -6.426,
+            5.0
+          ],
+          "focal": 24,
+          "ease": "easeInOut",
+          "feature": "site",
+          "caption": "Apollo LNG \u00b7 Option E"
+        }
+      ],
+      "captions": [],
+      "velocityReport": {
+        "cap": 10.0,
+        "max_v_before": 65.3,
+        "retimed_segments": 7,
+        "duration_growth_sec": 56.128,
+        "per_segment": [
+          {
+            "i": 0,
+            "dt_before": 3.0,
+            "dt_after": 11.314,
+            "dist": 113.137,
+            "v_before": 37.712,
+            "v_after": 10.0,
+            "retimed": true
+          },
+          {
+            "i": 1,
+            "dt_before": 3.0,
+            "dt_after": 11.314,
+            "dist": 113.137,
+            "v_before": 37.712,
+            "v_after": 10.0,
+            "retimed": true
+          },
+          {
+            "i": 2,
+            "dt_before": 3.0,
+            "dt_after": 11.314,
+            "dist": 113.137,
+            "v_before": 37.712,
+            "v_after": 10.0,
+            "retimed": true
+          },
+          {
+            "i": 3,
+            "dt_before": 3.0,
+            "dt_after": 19.59,
+            "dist": 195.901,
+            "v_before": 65.3,
+            "v_after": 10.0,
+            "retimed": true
+          },
+          {
+            "i": 4,
+            "dt_before": 4.0,
+            "dt_after": 12.516,
+            "dist": 125.155,
+            "v_before": 31.289,
+            "v_after": 10.0,
+            "retimed": true
+          },
+          {
+            "i": 5,
+            "dt_before": 5.0,
+            "dt_after": 5.0,
+            "dist": 15.0,
+            "v_before": 3.0,
+            "v_after": 3.0,
+            "retimed": false
+          },
+          {
+            "i": 6,
+            "dt_before": 4.0,
+            "dt_after": 4.0,
+            "dist": 27.743,
+            "v_before": 6.936,
+            "v_after": 6.936,
+            "retimed": false
+          },
+          {
+            "i": 7,
+            "dt_before": 4.0,
+            "dt_after": 8.947,
+            "dist": 89.474,
+            "v_before": 22.369,
+            "v_after": 10.0,
+            "retimed": true
+          },
+          {
+            "i": 8,
+            "dt_before": 4.0,
+            "dt_after": 4.0,
+            "dist": 15.811,
+            "v_before": 3.953,
+            "v_after": 3.953,
+            "retimed": false
+          },
+          {
+            "i": 9,
+            "dt_before": 4.0,
+            "dt_after": 4.0,
+            "dist": 2.236,
+            "v_before": 0.559,
+            "v_after": 0.559,
+            "retimed": false
+          },
+          {
+            "i": 10,
+            "dt_before": 5.0,
+            "dt_after": 9.133,
+            "dist": 91.334,
+            "v_before": 18.267,
+            "v_after": 10.0,
+            "retimed": true
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+site:
+  id: option-dup
+  letter: D
+iso_array:
+  count: 4
+  cols: 2
+  rows: 2
+  origin: [0, 0, 0]
+equipment:
+  - id: bogCapture
+    type: bog_skid
+    pos: [0, 0, 0]
+  - id: bogCapture
+    type: bog_skid
+    pos: [5, 0, 0]

@@ -1,18 +1,42 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
 
-# Other files and folders
-.settings/
+# Virtual environments
+.venv/
+venv/
+env/
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# Build / render outputs (regenerable, large)
+models/lng-site/cinematics/
+logs/
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# Blender autosave
+*.blend1
+
+# Local working files
+_cut/
+.backup/
+*.mp4
+*.mp4.zip
+*.zip
+*.mov
+
+# OS junk
+.DS_Store
+.thumbnail
+Thumbs.db
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+.cursorrules
+
+# Type checker caches
+.mypy_cache/
+.pyright/

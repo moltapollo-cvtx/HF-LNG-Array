@@ -1,0 +1,157 @@
+{
+  "source": "data.js",
+  "fidelity": "Draft engineering geometry dimensioned from proposal assumptions; pending vendor CAD replacement.",
+  "units": "meters",
+  "assumptions": {
+    "isoContainer": {
+      "length": 12.19,
+      "width": 2.44,
+      "height": 2.9,
+      "tankRadius": 1.08
+    },
+    "isoSpacing": {
+      "x": 15.5,
+      "y": 5.2
+    },
+    "queenTrailer": {
+      "length": 13.7,
+      "width": 2.6,
+      "height": 3.6
+    },
+    "vaporizerSkid": {
+      "length": 10,
+      "width": 5.8,
+      "height": 4.2
+    },
+    "pumpSkid": {
+      "length": 7.2,
+      "width": 3.8,
+      "height": 2.2
+    },
+    "bogSkid": {
+      "length": 6,
+      "width": 3.4,
+      "height": 2.8
+    },
+    "pipeManifold": {
+      "length": 6,
+      "width": 3,
+      "height": 1.2
+    },
+    "deliveryFlange": {
+      "length": 1.5,
+      "width": 0.8,
+      "height": 1.1
+    },
+    "truckBay": {
+      "length": 23,
+      "width": 5.5
+    }
+  },
+  "designBasis": {
+    "demandMin": 6,
+    "demandMax": 22,
+    "pressureMin": 550,
+    "pressureMax": 650,
+    "deliveryTempF": 40,
+    "queens": 2,
+    "vaporizerCapMcfHr": 1000
+  },
+  "options": [
+    {
+      "letter": "A",
+      "title": "Compact / Pump-less",
+      "subtitle": "Tier A · Option 1",
+      "isoCount": 4,
+      "isoCols": 2,
+      "isoRows": 2,
+      "hasPump": false,
+      "hasCapture": false,
+      "footprintAcres": 1.2,
+      "enduranceHrs": 6,
+      "refillCycleMin": [
+        90,
+        140
+      ],
+      "capexLowM": 3.3,
+      "capexHighM": 5.8,
+      "recommended": false
+    },
+    {
+      "letter": "B",
+      "title": "Compact / Pump-Assist",
+      "subtitle": "Tier A · Option 2",
+      "isoCount": 4,
+      "isoCols": 2,
+      "isoRows": 2,
+      "hasPump": true,
+      "hasCapture": false,
+      "footprintAcres": 1.2,
+      "enduranceHrs": 6,
+      "refillCycleMin": [
+        20,
+        25
+      ],
+      "capexLowM": 3.4,
+      "capexHighM": 6,
+      "recommended": false
+    },
+    {
+      "letter": "C",
+      "title": "Standard / Pump-Assist",
+      "subtitle": "Tier B · Option 2 — Recommended",
+      "isoCount": 12,
+      "isoCols": 6,
+      "isoRows": 2,
+      "hasPump": true,
+      "hasCapture": false,
+      "footprintAcres": 1.6,
+      "enduranceHrs": 12,
+      "refillCycleMin": [
+        20,
+        25
+      ],
+      "capexLowM": 4.6,
+      "capexHighM": 8.4,
+      "recommended": true
+    },
+    {
+      "letter": "D",
+      "title": "Extended / Pump-Assist",
+      "subtitle": "Tier C · Option 2",
+      "isoCount": 24,
+      "isoCols": 6,
+      "isoRows": 4,
+      "hasPump": true,
+      "hasCapture": false,
+      "footprintAcres": 2.3,
+      "enduranceHrs": 22,
+      "refillCycleMin": [
+        20,
+        25
+      ],
+      "capexLowM": 5.6,
+      "capexHighM": 10,
+      "recommended": false
+    },
+    {
+      "letter": "E",
+      "title": "Extended / Boil-off Capture",
+      "subtitle": "Tier C · Option 3 — BOG Recovery",
+      "isoCount": 24,
+      "isoCols": 6,
+      "isoRows": 4,
+      "hasPump": false,
+      "hasCapture": true,
+      "footprintAcres": 2.3,
+      "enduranceHrs": 22,
+      "refillCycleMin": [
+        90,
+        140
+      ],
+      "capexLowM": 5.46,
+      "capexHighM": 9.66,
+      "recommended": false
+    }
+  ]
+}

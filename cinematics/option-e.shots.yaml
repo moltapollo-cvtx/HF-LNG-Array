@@ -1,0 +1,218 @@
+# Apollo LNG Option E — cinematic shot list (DSL source-of-truth)
+# Compile with: python scripts/compile_shots.py cinematics/option-e.shots.yaml
+# Renders consume the generated models/lng-site/option-e-cinematics.json.
+
+# ─── CAPTIONS SCHEMA ──────────────────────────────────────────────────────────
+# Each cinematic may declare a `captions:` list. Each entry is one highlight.
+# When `captions:` is present, it REPLACES the shot-bound `caption:` strings
+# for that cinematic. Leave a caption's `text:` blank to disable that entry.
+#
+#   captions:
+#     - text:      "Cryogenic Manifold"   # caption text. Use **word** for teal bold.
+#       t:         14.0                   # start time (seconds from cinematic start)
+#       duration:  3.5                    # how long it shows
+#       fade_in:   0.3                    # opacity ramp-in seconds (default 0.3)
+#       fade_out:  0.4                    # opacity ramp-out seconds (default 0.4)
+#       position:  lower-center           # lower-center | upper-center | left | right
+#       font:      Satoshi-Bold           # bundled stem OR /abs/path/to/font.ttf
+#       effect:    fade                   # fade | slide-in | typewriter | scale-up | pulse
+#       bold_word: Manifold               # optional — highlights one word in teal
+#
+# Shot-bound `caption: "..."` strings remain as a fallback for cinematics that
+# don't declare a `captions:` block.
+# ──────────────────────────────────────────────────────────────────────────────
+
+site: option-e
+
+# Camera velocity cap (m/s). Segments that would exceed this get their dt
+# stretched so the camera never moves faster than the cap. Set false to disable.
+velocity_cap: 10
+
+cinematics:
+  process-flow:
+    label: "Process Flow"
+    description: "Follow the LNG through the site, ending on delivery. Pitch-deck cut."
+    duration: 45
+    # captions:  ← UNCOMMENT and edit to take full control. While captions: is
+    #              present, shot-bound `caption:` strings below are ignored.
+    #   - text: "Apollo LNG · BOG Capture Array"
+    #     t: 0.0
+    #     duration: 5.0
+    #     position: lower-center
+    #     effect: fade
+    #   - text: "Cryogenic Manifold"
+    #     t: 14.0          # fires WHEN blue pipes appear, not when the pan shot starts
+    #     duration: 4.0
+    #     effect: slide-in
+    #   - text: "BOG Capture — **Differentiator**"
+    #     t: 50.0
+    #     duration: 5.0
+    #     effect: scale-up
+    #     bold_word: Differentiator
+    shots:
+      - type: wide
+        dur: 5
+        subject: site
+        caption: "Apollo LNG · Option E"
+
+      - type: push
+        dur: 5
+        subject: transportOffload
+        from: NW
+        caption: "Transport Offload Bay"
+
+      - type: hero
+        dur: 4
+        subject: transportOffload
+        caption: "Transport Offload Bay"
+
+      - type: fly
+        dur: 8
+        subject: isoArrayCenter
+        from: W
+        caption: "24× 10K LNG ISO"
+
+      - type: pan
+        dur: 4
+        subject: cryoManifold
+        caption: "Cryogenic Manifold"
+
+      - type: hero
+        dur: 4
+        subject: queens
+        caption: "HP Smart Queens (×2)"
+
+      - type: push
+        dur: 4
+        subject: vaporizer
+        from: W
+        caption: "Glycol-Bath Vaporizer + Stack"
+
+      - type: hero
+        dur: 5
+        subject: bogCapture
+        distance: 50
+        focal: 32
+        caption: "BOG Capture — Option E Differentiator"
+
+      - type: land
+        dur: 3
+        subject: delivery
+        caption: "Delivery — 550–650 PSIG"
+
+  differentiator:
+    label: "Differentiator First"
+    description: "Open on the BOG capture skid, pull back to reveal site context."
+    duration: 45
+    # captions:  ← UNCOMMENT to override shot-bound captions for this cinematic.
+    #   - text: "BOG Capture System"
+    #     t: 0.0
+    #     duration: 4.0
+    #     effect: fade
+    shots:
+      - type: hero
+        dur: 4
+        subject: bogCapture
+        distance: 50
+        focal: 32
+        caption: "BOG Capture System"
+
+      - type: pull
+        dur: 4
+        subject: bogCapture
+        from: NE
+        caption: "Zero LNG Loss Without Pumps"
+
+      - type: pull
+        dur: 5
+        subject: bogCapture
+        from: NE
+        caption: "Boil-off Capture — Option E"
+
+      - type: wide
+        dur: 5
+        subject: site
+        caption: "Apollo LNG — Option E"
+
+      - type: fly
+        dur: 5
+        subject: isoArrayCenter
+        from: W
+        caption: "24× 10K LNG ISO"
+
+      - type: hero
+        dur: 4
+        subject: queens
+        caption: "HP Smart Queens"
+
+      - type: push
+        dur: 4
+        subject: vaporizer
+        from: W
+        caption: "Glycol-Bath Vaporizer"
+
+      - type: hero
+        dur: 4
+        subject: delivery
+        caption: "Delivery Flange"
+
+      - type: hero
+        dur: 10
+        subject: bogCapture
+        caption: "Boil-off Capture — Option E"
+
+  scale-detail:
+    label: "Scale → Detail"
+    description: "Orbital establishing then documentary detail pass across the skids."
+    duration: 45
+    # captions:  ← UNCOMMENT to override shot-bound captions for this cinematic.
+    #   - text: "Apollo LNG · BOG Capture Array"
+    #     t: 0.0
+    #     duration: 6.0
+    #     effect: fade
+    shots:
+      - type: orbit
+        dur: 12
+        subject: site
+        caption: "Apollo LNG · Option E"
+
+      - type: fly
+        dur: 4
+        subject: transportOffload
+        from: NW
+        caption: "Transport Offload Bay"
+
+      - type: hero
+        dur: 5
+        subject: isoArrayCenter
+        caption: "24× 10K LNG ISO"
+
+      - type: hero
+        dur: 4
+        subject: cryoManifold
+        caption: "Cryogenic Manifold"
+
+      - type: hero
+        dur: 4
+        subject: queens
+        caption: "HP Smart Queens (×2)"
+
+      - type: hero
+        dur: 4
+        subject: vaporizer
+        caption: "Glycol-Bath Vaporizer + Stack"
+
+      - type: hero
+        dur: 4
+        subject: bogCapture
+        caption: "BOG Capture Skid"
+
+      - type: land
+        dur: 5
+        subject: delivery
+        caption: "Delivery · 550–650 PSIG"
+
+      - type: wide
+        dur: 3
+        subject: site
+        caption: "Apollo LNG · Option E"

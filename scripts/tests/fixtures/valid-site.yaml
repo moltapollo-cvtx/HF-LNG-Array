@@ -1,0 +1,27 @@
+site:
+  id: option-test
+  letter: T
+  title: "Test Site"
+  subtitle: "Fixture · Test"
+  footprintAcres: 2.0
+  enduranceHrs: 10
+  hasPump: false
+  hasCapture: true
+  recommended: false
+
+iso_array:
+  count: 6
+  cols: 3
+  rows: 2
+  origin: [-10, -2, 0]
+  rotation: 0
+
+equipment:
+  - id: cryoManifold
+    type: pipe_manifold
+    pos: [0, -10, 0]
+    rotation: 0
+  - id: bogCapture
+    type: bog_skid
+    pos: [15, -10, 0]
+    rotation: 45

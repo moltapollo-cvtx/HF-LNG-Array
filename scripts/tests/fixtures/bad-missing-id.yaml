@@ -1,0 +1,9 @@
+site:
+  letter: X
+  title: "Missing id"
+iso_array:
+  count: 4
+  cols: 2
+  rows: 2
+  origin: [0, 0, 0]
+equipment: []
